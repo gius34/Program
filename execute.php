@@ -21,7 +21,7 @@ header("Content-Type: application/json");
 $response = '';
 $mul = 1;
 while ($mul <= 10) {
-	print("$text");
+	$response = $text;
 	$mul++;
 }
 
