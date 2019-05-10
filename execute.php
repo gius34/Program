@@ -24,22 +24,7 @@ while ($mul <= 10) {
 	print("$text");
 	$mul++;
 }
-if(strpos($text, "/start") === 0 || $text=="ciao")
-{
-	$response = "Ciao $firstname, benvenuto!";
-}
-elseif($text=="domanda 1")
-{
-	$response = "risposta 1";
-}
-elseif($text=="domanda 2")
-{
-	$response = "risposta 2";
-}
-else
-{
-	$response = "Comando non valido!";
-}
+
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
