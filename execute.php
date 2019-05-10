@@ -22,10 +22,16 @@ $response = '';
 $mul = 1;
 while ($mul <= 10) {
 	$response = $text;
-	$parameters = array('chat_id' => $chatId, "text" => $response);
-	$parameters["method"] = "sendMessage";
-	echo json_encode($parameters);
+	
+	
+	
 	$mul++;
 }
-
+$parameters = array('chat_id' => $chatId, "text" => $response);
+$parameters["method"] = "sendMessage";
+$parameters = array('chat_id' => $chatId, "text" => $response);
+$parameters["method"] = "sendMessage";
+$parameters = array('chat_id' => $chatId, "text" => $response);
+$parameters["method"] = "sendMessage";
+echo json_encode($parameters);
 
