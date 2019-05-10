@@ -5,6 +5,7 @@ if(!$update)
 {
   exit;
 }
+
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
 $chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
@@ -13,11 +14,15 @@ $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name']
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
 $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
+$n=0;
 $text = trim($text);
 $text = strtolower($text);
 header("Content-Type: application/json");
 $response = '';
-
+while (n <=0){
+	$response = $text;
+	$n = $n + 1;
+}
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
 	$response = "Ciao $firstname, benvenuto!";
