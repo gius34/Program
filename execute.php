@@ -22,6 +22,8 @@ $response = '';
 $mul = 1;
 while ($mul <= 10) {
 	$response = $text;
+	$response = $text;
+	$response = $text;
 	$mul++;
 }
 
