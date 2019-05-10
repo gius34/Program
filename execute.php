@@ -14,14 +14,15 @@ $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name']
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
 $date = isset($message['date']) ? $message['date'] : "";
 $text = isset($message['text']) ? $message['text'] : "";
-$n=0;
+
 $text = trim($text);
 $text = strtolower($text);
 header("Content-Type: application/json");
 $response = '';
-while (n <=0){
-	$response = $text;
-	$n = $n + 1;
+$mul = 1;
+while ($mul <= 10) {
+	print("$text");
+	$mul++;
 }
 if(strpos($text, "/start") === 0 || $text=="ciao")
 {
